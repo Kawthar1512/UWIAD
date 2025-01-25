@@ -21,7 +21,7 @@ export default function NavBar(){
                     <a href="#contact"  className="nav-links">Contact</a>
                     </div>
                     <div className="navButton">
-                    <button className="donate-btn">Donate Now</button>
+                    <button className="donate-btn"> Donate Now</button>
                     <button className="join-btn">Join Us</button>
 
 

@@ -7,29 +7,8 @@ section {
 body {
   background-color: #e8daf7;
   color: black;
-  font-family: 'Fira Code', monospace;
-  /* padding: 0px 0px 0px 70px; */
+  
 }
-@font-face {
-  font-family: 'Fira Code';
-  src: url('fonts/FiraCode-Regular.woff2') format('ttf'),
-       url('fonts/FiraCode-Regular.woff') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Fira Code';
-  src: url('fonts/FiraCode-Bold.woff2') format('woff2'),
-       url('fonts/FiraCode-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* #root {
-  max-width: 1280px;
-  text-align: center;
-} */
 
 .uwiadlogo {
   width: 65px;
@@ -44,7 +23,6 @@ body {
   font-weight: 600;
   font-style: normal;
   font-size: 17px;
-  /* line-height: 3.0; */
   color: #551a8b;
 }
 .active:hover{
@@ -60,7 +38,7 @@ body {
   margin-top: 20px;
   margin-right: 38px;
   cursor: pointer;
-  font-family: 'fira code';
+  /* font-family: 'fira code'; */
   font-optical-sizing: auto;
   font-weight: 700;
   font-size: 15px;
@@ -76,7 +54,7 @@ body {
   margin-top: 20px;
   margin-right: 30px;
   cursor: pointer;
-  font-family: 'fira code';
+  /* font-family: 'fira code'; */
   font-optical-sizing: auto;
   font-weight: 700;
   font-size: 15px;
@@ -102,11 +80,8 @@ body {
 }
 .first-section h1 {
   font-size: 60px;
-  font-family: 'Fira Code', monospace;
+  /* font-family: 'Fira Code', monospace; */
   letter-spacing: 3px;
-  /* word-spacing: 20px; */
-
-  /* font-family: Arial, Helvetica, sans-serif; */
   color: #551a8b;
   line-height: 1;
 }
@@ -119,19 +94,17 @@ body {
   color: black;
 }
 .donate-btn-hero {
-  /* margin-top: 20px; */
-  /* margin-right: 38px; */
+  
   cursor: pointer;
-  font-family: 'fira code';
+  /* font-family: 'fira code'; */
   font-optical-sizing: auto;
   font-weight: 700;
   font-size: 15px;
   padding: 15px;
   border: none;
-  /* width: 160px; */
   border-radius: 10px;
   color: white;
-  background-color: #7d33c3;  /* height: 50px; */
+  background-color: #7d33c3;  
 }
 .img1Div {
   width: 370px;
@@ -265,7 +238,7 @@ body {
 .section3{
 padding: 50px 100px 40px 100px;
 text-align: center;
-position: relative;
+/* position: relative; */
 
 }
 
@@ -295,21 +268,27 @@ position: relative;
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 100;
-  background-color: transparent;
-  position: absolute;
+  z-index: 9999;
+  /* background-color: transparent; */
+  /* position: absolute; */
+  position: fixed;
 
 }
 
 .slideshow.active {
   display: flex;
-background-color: rgba(116, 112, 112, 0.7); 
+background-color: rgba(116, 112, 112, 0.7);
 
 }
 
-.slideshow img {
+/* .slideshow img {
   max-width: 100%;
   max-height: 100%;
+} */
+.slideshow img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
 }
 
 .prev,
@@ -346,6 +325,10 @@ footer{
   color: white;
 
 }
+.insta{
+  width: 18px;
+  margin-right: 10px;
+}
 .foot-logo{
   width: 20px;
 }
@@ -364,10 +347,20 @@ footer{
   border-bottom: 1px solid gray;
   padding-bottom: 15px;
 }
-footer  a{
-  color: white;
+.foot-links a{
+  color: rgb(216, 214, 214);
   text-decoration: none;
-  margin-left: 80px;
+  margin-left: 50px;
+  font-size: 14px;
+}
+.foot-links a:first-child{
+  color: #b187d8;
+  
+}
+.foot-links a:hover{
+  color:#8046b7;
+  text-decoration: none;
+  /* margin-left: 80px; */
 }
 .logo-content{
   display: flex;
@@ -383,4 +376,14 @@ footer  a{
 
   /* width: 100px; */
 }
-
+.foot2{
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 1px solid gray; */
+  padding-top: 20px;
+}
+.copy{
+  color: lightgray;
+  font-size: 10px;
+  margin-top: -10px;
+}

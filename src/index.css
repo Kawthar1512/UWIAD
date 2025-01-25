@@ -1,9 +1,7 @@
 *{
   box-sizing: border-box;
 }
-body{
-  font-family: 'Fira Code', monospace;
-}
+
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -20,21 +18,8 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: 'Fira Code';
-  src: url('fonts/FiraCode-Regular.woff2') format('woff2'),
-       url('fonts/FiraCode-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'Fira Code';
-  src: url('fonts/FiraCode-Bold.woff2') format('woff2'),
-       url('fonts/FiraCode-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
+
 
 body {
   margin: 0;
@@ -201,6 +186,4 @@ section.loaded {
   opacity: 1;
   transform: translateY(0);
 }
-.insta{
-  width: 25px;
-}
+
