@@ -16,7 +16,7 @@ export default function Footer() {
             </div>
             <div className="for-text">
               <div>UWIAD</div>
-              <p> United Women Iniative Against Depression </p>
+              <p  className="united-text"> United Women Iniative Against Depression </p>
             </div>
           </div>
           <div className="foot-links">

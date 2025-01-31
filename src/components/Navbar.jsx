@@ -1,39 +1,44 @@
-import React from "react"
-import uwiadlogo from "../assets/uwiadlogo.png"
+import React, { useState } from "react";
+import uwiadlogo from "../assets/uwiadlogo.png";
+import "../Nav.css"; // Ensure your CSS file path is correct
 
-let section = document.querySelectorAll('section');
-let menu = document.querySelectorAll('header nav a');
-export default function NavBar(){
-    return(
-        <>
-            <header>
-                <div className="ForNav">
+export default function NavBar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-              
-                <nav>
-                    <a href="#">
-                    <img src={uwiadlogo} alt="uwiad-logo" className="uwiadlogo"/>
-                    </a>
-                    <div className="nav-links-container">
-                    <a href="#home" className="nav-links active"  >Home</a>
-                    <a href="#about" className="nav-links">About  us</a>
-                    <a href="#gallery"  className="nav-links">Gallery</a>
-                    <a href="#contact"  className="nav-links">Contact</a>
-                    </div>
-                    <div className="navButton">
-                    <button className="donate-btn"> Donate Now</button>
-                    <button className="join-btn">Join Us</button>
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
+  return (
+    <>
+      <header>
+        <div className="ForNav">
+          <nav>
+            <a href="#">
+              <img src={uwiadlogo} alt="uwiad-logo" className="uwiadlogo" />
+            </a>
 
+            {/* Hamburger Icon for Mobile View */}
+            <div className="hamburger" onClick={toggleMenu}>
+              ☰
+            </div>
 
-                    </div>
+            {/* Navigation Links */}
+            <div className={`nav-links-container ${isMenuOpen ? "show" : ""}`}>
+              <a href="#home" className="nav-links active">Home</a>
+              <a href="#about" className="nav-links">About us</a>
+              <a href="#gallery" className="nav-links">Gallery</a>
+              <a href="#contact" className="nav-links">Contact</a>
+            </div>
 
-                  
-                    
-                    
-                </nav>
-                </div>
-            </header>
-        </>
-    )
+            {/* Buttons */}
+            <div className={`navButton ${isMenuOpen ? "show" : ""}`}>
+              <button className="donate-btn">Donate Now</button>
+              <button className="join-btn">Join Us</button>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </>
+  );
 }

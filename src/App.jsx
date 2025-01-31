@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
+import "./Nav.css"
 import NavBar from "./components/Navbar.jsx";
-import Section from "./components/Section.jsx";
+import Section1 from "./components/Section1.jsx";
 import Section2 from "./components/Section2.jsx";
 import ScrollEffects from "./components/scroll.jsx";
 import ImageGallery from "./components/Gallery.jsx";
@@ -13,7 +14,7 @@ export default function App() {
     <>
       <ScrollEffects />
       <NavBar />
-      <Section />
+      <Section1 />
       <Section2 />
       <ImageGallery />
       <Accordion />

@@ -1,0 +1,147 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 80px 6px 80px ;
+    }
+  .ForNav{
+    position: relative;
+  }
+  .nav-links-container {
+    margin-top: 40px;
+  }
+  .nav-links {
+    text-decoration: none;
+    margin-left: 60px;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 17px;
+    color: #551a8b;
+  }
+
+.uwiadlogo {
+    width: 65px;
+  }
+  
+  .active:hover{
+    background: #00c2cb;
+    color: #42455a;
+    transition: 0.5s ease-out;
+    letter-spacing: 2px;
+  }
+  /* .navButton {
+    margin-right: 120px;
+  } */
+  .donate-btn {
+    margin-top: 20px;
+    margin-right: 38px;
+    cursor: pointer;
+    /* font-family: 'fira code'; */
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 15px;
+    border: none;
+    /* width: 160px; */
+    border-radius: 10px;
+    color: white;
+    background-color: #7d33c3;
+    /* height: 50px; */
+  }
+  .join-btn{
+    margin-top: 20px;
+    margin-right: 30px;
+    cursor: pointer;
+    /* font-family: 'fira code'; */
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 15px;
+    border: none;
+    /* width: 160px; */
+    border-radius: 10px;
+    background-color: white;
+   color: #551a8b;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  }
+
+  /* Default Desktop Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 80px;
+  align-items: center;
+}
+
+.nav-links-container {
+  display: flex;
+}
+
+.navButton {
+  display: flex;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #551a8b;
+}
+
+/* Mobile Styles */
+@media (max-width: 708px) {
+  nav {
+    /* flex-direction: row; */
+    padding: 10px 40px;
+    /* align-items: center; */
+  }
+
+  .nav-links-container {
+    display: none;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .nav-links-container.show {
+    display: flex;
+    position: absolute;
+    /* right: 100px; */
+    float: right;
+    /* top: 200px; */
+    background-color: red;
+    padding: 20px;
+  }
+
+  .nav-links {
+    margin: 10px 0;
+  }
+
+  .navButton {
+    display: none;
+    width: 100px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .navButton.show {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .hamburger {
+    display: inline-block;
+    position: relative;
+    font-size: 40px;
+    /* right: 10px; */
+    /* align-self:flex-end; */
+    display: flex;
+    /* justify-content: space-around; */
+    /* justify-content: center; */
+  }
+  .uwiadlogo {
+    width: 40px;
+  }
+
+}

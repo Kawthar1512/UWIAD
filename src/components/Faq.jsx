@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import faq from "../assets/faq.png";
+import "../Faq.css"
 
 const AccordionItem = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);

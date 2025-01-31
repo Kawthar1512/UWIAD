@@ -1,18 +1,30 @@
-import React from "react";
+// import React from "react";
 import img1 from "../assets/img1.jpeg";
 import img2 from "../assets/img2.jpg";
 import world from "../assets/world.png";
 import volunteer from "../assets/volunteer.png";
 import fund from "../assets/fundraising.png";
 import donate from "../assets/donate.png";
+import "../Section1.css"
+// import {gsap} from "gsap"
+import React, { useRef, useEffect } from "react";
+import { gsap, Circ } from "gsap";
+
 
 
 export default function Section() {
+  const myHeaderRef = useRef(null);
+
+  useEffect(() => {
+    gsap.to(myHeaderRef.current,{ rotation: 360, duration: 3, ease:Circ.easeOut });
+  }, []);
+
+
   return (
     <>
       <section  id="home" className="first-section">
         <div className="first-section-text">
-          <h1>Envision a brighter future for everyone.</h1>
+          <h1  className="myHeader">Envision a brighter future for everyone.</h1>
           <p className="giving-back">
             Giving back is a noble act. Your selfless contribution, however
             small, has a profound impact on the lives of others. Let's join
@@ -23,7 +35,7 @@ export default function Section() {
           <button className="donate-btn-hero">Donate Now</button>
         </div>
 
-        <div className="img1Div">
+        <div ref={myHeaderRef} className="img1Div">
           <img src={img1} alt="" />
         </div>
         <div className="img2Div">
