@@ -43,6 +43,7 @@ nav {
     padding: 15px;
     border: none;
     /* width: 160px; */
+    text-decoration: none;
     border-radius: 10px;
     color: white;
     background-color: #7d33c3;
@@ -106,11 +107,16 @@ nav {
   .nav-links-container.show {
     display: flex;
     position: absolute;
+    right: 10px;
+    top: 50px;
     /* right: 100px; */
-    float: right;
+    /* float: right; */
     /* top: 200px; */
-    background-color: red;
+    background-color: whitesmoke;
     padding: 20px;
+    width: 200px;
+    height: 270px;
+    
   }
 
   .nav-links {
@@ -142,6 +148,14 @@ nav {
   }
   .uwiadlogo {
     width: 40px;
+  }
+  .donate-btn {
+    position: absolute;
+    padding: 10px;
+    width: 120px;
+    top: 220px;
+    left: 155px;
+    /* height: 50px; */
   }
 
 }

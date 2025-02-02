@@ -11,7 +11,7 @@ import "../Section2.css"
 export default function Section2() {
   return (
     <>
-      <section id="about" className="section2">
+      <section id= "about" className="section2">
             <img src={chart} alt="" className="children" />
 
         <div className="section2-text">

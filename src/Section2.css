@@ -46,7 +46,7 @@
   .for-hope{
     display: flex;
     color: #7d33c3;
-    margin-top: -40px;
+    /* margin-top: -40px; */
   }
 
   @media (max-width: 708px) {

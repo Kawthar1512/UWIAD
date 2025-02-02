@@ -33,8 +33,8 @@ export default function NavBar() {
 
             {/* Buttons */}
             <div className={`navButton ${isMenuOpen ? "show" : ""}`}>
-              <button className="donate-btn">Donate Now</button>
-              <button className="join-btn">Join Us</button>
+              <a href="#" className="donate-btn">Donate Now</a>
+              {/* <button className="join-btn">Join Us</button> */}
             </div>
           </nav>
         </div>

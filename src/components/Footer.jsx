@@ -8,7 +8,7 @@ import whatsapp from "../assets/whatsapp.png";
 export default function Footer() {
   return (
     <>
-      <footer>
+      <footer id="contact">
         <div className="foot1">
           <div className="logo-content">
             <div className="for-logo">
