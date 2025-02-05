@@ -1,12 +1,16 @@
 .first-section {
     display: flex;
-    padding: 50px 80px 40px 80px;
+    padding: 100px 80px 40px 80px;
+    margin-top: 100px;
     /* border: 1px solid black; */
     height: 550px;
   }
   .first-section-text {
     width: 500px;
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-top: 30px; */
   }
   .first-section h1 {
     font-size: 60px;
@@ -25,8 +29,8 @@
   .donate-btn-hero {
     
     cursor: pointer;
-    /* font-family: 'fira code'; */
-    font-optical-sizing: auto;
+    width: 150px;
+    /* display: inline; */
     font-weight: 700;
     font-size: 15px;
     padding: 15px;
@@ -34,6 +38,7 @@
     border-radius: 10px;
     color: white;
     background-color: #7d33c3;  
+    /* display: inline; */
   }
   .img1Div {
     width: 370px;
@@ -112,7 +117,7 @@
     margin-left: 170px;
   }
 
-  @media (max-width: 708px) {
+  @media (max-width: 1000px) {
     .first-section {
         display: flex;
         padding: 10px 40px 40px 40px;
@@ -127,7 +132,7 @@
         overflow: hidden;
         position: absolute;
         top: 160px;
-        display: none;
+        /* display: none; */
         right: 100px;
         /* z-index: -1; */
       }

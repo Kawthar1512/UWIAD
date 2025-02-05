@@ -1,3 +1,12 @@
+header {
+  background-color: #e8daf7;
+    position: sticky;
+  top: 0px;
+  z-index: 10;
+
+}
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -6,9 +15,7 @@ nav {
   .ForNav{
     position: relative;
   }
-  .nav-links-container {
-    margin-top: 40px;
-  }
+ 
   .nav-links {
     text-decoration: none;
     margin-left: 60px;
@@ -22,22 +29,23 @@ nav {
 .uwiadlogo {
     width: 65px;
   }
+  .for-links-alone{
+    margin-left: -700px;
+    margin-top: 20px;
+  }
   
   .active:hover{
-    background: #00c2cb;
     color: #42455a;
     transition: 0.5s ease-out;
     letter-spacing: 2px;
   }
-  /* .navButton {
-    margin-right: 120px;
-  } */
+ 
+
   .donate-btn {
-    margin-top: 20px;
-    margin-right: 38px;
+   
     cursor: pointer;
-    /* font-family: 'fira code'; */
-    font-optical-sizing: auto;
+   margin-left: 100px;
+   /* margin-top: -25px; */
     font-weight: 700;
     font-size: 15px;
     padding: 15px;
@@ -47,7 +55,12 @@ nav {
     border-radius: 10px;
     color: white;
     background-color: #7d33c3;
+    
     /* height: 50px; */
+  }
+  .donate-btn:hover{
+    background-color: whitesmoke;
+    color: #7d33c3;
   }
   .join-btn{
     margin-top: 20px;
@@ -89,9 +102,22 @@ nav {
   cursor: pointer;
   color: #551a8b;
 }
+.ForNav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #e8daf7;
+  transition: box-shadow 0.3s ease;
+}
+
+.shadow-on-scroll {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 /* Mobile Styles */
-@media (max-width: 708px) {
+@media (max-width: 1000px) {
   nav {
     /* flex-direction: row; */
     padding: 10px 40px;
@@ -126,14 +152,12 @@ nav {
   .navButton {
     display: none;
     width: 100px;
-    position: absolute;
-    top: 20px;
+ 
   }
 
   .navButton.show {
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
   }
 
   .hamburger {
@@ -150,11 +174,10 @@ nav {
     width: 40px;
   }
   .donate-btn {
-    position: absolute;
+  
     padding: 10px;
     width: 120px;
-    top: 220px;
-    left: 155px;
+   
     /* height: 50px; */
   }
 

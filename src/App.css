@@ -81,7 +81,7 @@ footer{
   font-size: 10px;
   margin-top: -10px;
 }
-@media (max-width:708px) {
+@media (max-width:1000px) {
   footer{
     padding: 10px 40px 40px 40px;
     /* background-color: red; */

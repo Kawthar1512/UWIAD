@@ -2,6 +2,7 @@
     text-align: center;
     background-color: whitesmoke;
     padding: 50px 100px 50px 100px;
+    overflow-x: hidden;
   
    }
   .accordion {
@@ -86,7 +87,7 @@
   .accordion::-moz-focus-inner {
     border: 0; /* Removes Firefox focus border */
   }
-  @media (max-width:700px) {
+  @media (max-width:1000px) {
     /* .accordion{
         width: 0px;
     } */

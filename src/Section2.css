@@ -1,83 +1,80 @@
-
 .section2 {
-    display: flex;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 100px 80px 100px 80px;
-    /* background-color: #e8daf7; */
-    background-color: whitesmoke;
-  
-    /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+  padding: 100px 80px 100px 80px;
+  /* background-color: #e8daf7; */
+  background-color: whitesmoke;
+  overflow-x: hidden;
+
+  /* border: 1px solid black; */
+}
+.section2-text {
+  /* margin-top: 100px; */
+  margin-left: 300px;
+
+  text-align: justify;
+  text-justify: inter-word;
+}
+.sec2-text {
+  margin-top: 5px;
+}
+.title {
+  font-weight: bold;
+  font-style: italic;
+  margin-top: -50px;
+}
+.discover {
+  margin-top: 20px;
+  margin-right: 38px;
+  cursor: pointer;
+  /* font-family: 'fira code'; */
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 15px;
+  border: none;
+  /* width: 160px; */
+  border-radius: 10px;
+  color: white;
+  background-color: #7d33c3;
+  /* height: 50px; */
+}
+.hopee {
+  width: 50px;
+}
+.for-hope {
+  display: flex;
+  color: #7d33c3;
+  /* margin-top: -40px; */
+}
+
+@media (max-width: 1000px) {
+  .children {
+    width: 300px;
+    height: 300px;
   }
-  .section2-text{
-    margin-left: 300px;
-    /* width: 400px; */
-    /* margin-top: 60px; */
-    text-align: justify;
-    text-justify: inter-word;
-  
+  .section2 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 40px 40px 40px;
   }
-  .sec2-text{
-        margin-top: 5px;
+  .section2-text {
+    margin-left: 0px;
+    /* margin-top: -10px; */
   }
-  .title{
+  .about-text {
+    /* text-align: center; */
+    font-size: 18px;
+  }
+  .for-hope h1 {
+    font-size: 1.1rem;
+  }
+  .title {
     font-weight: bold;
     font-style: italic;
     margin-top: -50px;
   }
-  .discover{
-    margin-top: 20px;
-    margin-right: 38px;
-    cursor: pointer;
-    /* font-family: 'fira code'; */
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-size: 15px;
-    padding: 15px;
-    border: none;
-    /* width: 160px; */
-    border-radius: 10px;
-    color: white;
-    background-color: #7d33c3;
-    /* height: 50px; */
-  }
-  .hopee{
-    width: 50px;
-  }
-  .for-hope{
-    display: flex;
-    color: #7d33c3;
-    /* margin-top: -40px; */
-  }
-
-  @media (max-width: 708px) {
-    .children{
-        width: 300px;
-        height: 300px;
-    }
-    .section2{
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        padding: 10px 40px 40px 40px;
-
-    }
-    .section2-text{
-        margin-left: 0px;
-        /* margin-top: -10px; */
-      
-      }
-      .about-text{
-        /* text-align: center; */
-        font-size: 18px;
-      }
-      .for-hope h1{
-        font-size: 1.1rem;
-      }
-      .title{
-        font-weight: bold;
-        font-style: italic;
-        margin-top: -50px;
-      }
-   
-
-  }
+}

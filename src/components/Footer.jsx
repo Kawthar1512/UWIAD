@@ -41,7 +41,7 @@ export default function Footer() {
             >
               <img src={facebook} alt="" className="insta" />
             </a>
-            <a href="http://">
+            <a href="#">
               <img src={twitter} alt="" className="insta" />
             </a>
             <a
