@@ -132,7 +132,7 @@
         overflow: hidden;
         position: absolute;
         top: 160px;
-        /* display: none; */
+        display: none;
         right: 100px;
         /* z-index: -1; */
       }
