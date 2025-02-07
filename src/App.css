@@ -1,31 +1,34 @@
+/* Global Styling */
 * {
   box-sizing: border-box;
 }
+
 section {
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
+
 body {
   background-color: #e8daf7;
   color: black;
-  
 }
 
-
-
-footer{
+/* Footer Styling */
+footer {
   background-color: #121111;
-  padding: 40px 100px 40px 100px;
+  padding: 40px 100px;
   color: white;
-
 }
-.insta{
+
+.insta {
   width: 18px;
   margin-right: 10px;
 }
-.foot-logo{
+
+.foot-logo {
   width: 20px;
 }
-.for-logo{
+
+.for-logo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -34,66 +37,73 @@ footer{
   align-items: center;
   padding: 7px;
 }
-.foot1{
+
+.foot1 {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid gray;
   padding-bottom: 15px;
 }
-.foot-links a{
+
+.foot-links a {
   color: rgb(216, 214, 214);
   text-decoration: none;
   margin-left: 50px;
   font-size: 14px;
 }
-.foot-links a:first-child{
+
+.foot-links a:first-child {
   color: #b187d8;
-  
 }
-.foot-links a:hover{
-  color:#8046b7;
+
+.foot-links a:hover {
+  color: #8046b7;
   text-decoration: none;
-  /* margin-left: 80px; */
 }
-.logo-content{
+
+.logo-content {
   display: flex;
 }
-.for-text{
+
+.for-text {
   margin-left: 10px;
 }
-.for-text p{
+
+.for-text p {
   font-style: italic;
   font-size: 10px;
   margin-top: -4px;
-  color:#e8daf7;
-
-  /* width: 100px; */
+  color: #e8daf7;
 }
-.foot2{
+
+.foot2 {
   display: flex;
   justify-content: space-between;
-  /* border-bottom: 1px solid gray; */
   padding-top: 20px;
 }
-.copy{
+
+.copy {
   color: lightgray;
   font-size: 10px;
   margin-top: -10px;
 }
-@media (max-width:1000px) {
-  footer{
-    padding: 10px 40px 40px 40px;
-    /* background-color: red; */
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 1000px) {
+  footer {
+    padding: 10px 40px;
   }
-  .foot-links a{
+
+  .foot-links a {
     margin-left: 6px;
     font-size: 10px;
-
   }
-  .foot-logo{
+
+  .foot-logo {
     width: 13px;
   }
-  .for-logo{
+
+  .for-logo {
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -102,15 +112,15 @@ footer{
     align-items: center;
     padding: 6px;
   }
-  .for-text p{
+
+  .for-text p {
     font-style: italic;
     font-size: 8px;
     margin-top: 2px;
-    color:#e8daf7;
-  
-    /* width: 100px; */
+    color: #e8daf7;
   }
-  .copy{
+
+  .copy {
     font-size: 8px;
   }
 }

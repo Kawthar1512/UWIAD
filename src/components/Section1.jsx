@@ -1,4 +1,6 @@
 // import React from "react";
+import { Link } from "react-router-dom";
+
 import img1 from "../assets/img1.jpeg";
 import img2 from "../assets/img2.jpg";
 import world from "../assets/world.png";
@@ -9,6 +11,7 @@ import "../Section1.css"
 // import {gsap} from "gsap"
 import React, { useRef, useEffect } from "react";
 import { gsap, Circ } from "gsap";
+
 
 
 
@@ -32,7 +35,9 @@ export default function Section() {
             <img src={world} alt="" className="worldImg" />
 
           </p>
+          <Link to="/payment">
           <button className="donate-btn-hero">Donate Now</button>
+          </Link>
         </div>
 
         <div ref={myHeaderRef} className="img1Div">

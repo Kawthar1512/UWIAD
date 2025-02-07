@@ -1,8 +1,7 @@
 import React from "react";
 import "../Payment.css";
 import paystack from "../assets/paystack.png";
-import { footer } from "framer-motion/client";
-import Footer from "../components/Footer";
+
 
 export default function Payment() {
   const payment = document.getElementsByClassName("payment-section");
@@ -14,7 +13,7 @@ export default function Payment() {
   return (
     <>
       <section className="payment-section">
-        <h2>You are about to save a life!</h2>
+        <h2>Thank you for your generosity</h2>
         <p>
           You can make donation through any of the payment gateways provided
           below.{" "}
@@ -37,7 +36,7 @@ export default function Payment() {
           <h3>United Women Initiative Against Depression Foundation</h3>
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
