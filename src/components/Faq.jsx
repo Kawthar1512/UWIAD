@@ -43,28 +43,27 @@ const Accordion = () => {
   const accordionData = [
     {
       title: "Is my Personal Information secure?",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      content: "Yes, your personal information is 100% secure on our website",
     },
     {
       title: "What payment methods do you accept?",
       content:
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "We accept payment through paystack or you can make direct transfer into the foundation's Bank account",
     },
 
     {
       title: "What is the minimum donation amount?",
       content:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+        "We have no  minimum donation amount, you can donate any amount you can afford. ",
     },
     {
       title: "Can  I donate good/services instead of money?",
       content:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+        "Absolutely! Kindly send us an email or message us on any of our social media handles",
     },
     {
       title: "Do I have to be a member to donate? ",
-      content:
-        "No, you don’t have to be a member to donate. There are many additional ways to help build the Internet and make it stronger. You can follow us on social media",
+      content: "No, you don’t have to be a member to donate",
     },
   ];
 
