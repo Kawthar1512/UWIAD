@@ -1,7 +1,6 @@
 .payment-section{
-    /* margin-top: 200px; */
     padding:150px 50px 150px 50px ;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     /* height: 500px; */
 }
 
@@ -13,6 +12,9 @@ button{
     padding: 15px;
     border-radius: 4px;
     cursor : pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
 
 }
 .paystack-img{
@@ -20,4 +22,21 @@ button{
 }
 footer{
    margin-top: 30px;
+}
+h1{
+    /* color:red; */
+    font-size: 30px;
+}
+.paym{
+    font-weight: 50;
+}
+.separator-text{
+    font-size: 30px;
+}
+.account-number{
+    color: red;
+    font-size: 50px;
+}
+.account-number p,h3{
+    font-weight: bold;
 }

@@ -46,6 +46,7 @@
 .for-hope {
   display: flex;
   color: #7d33c3;
+ 
   /* margin-top: -40px; */
 }
 
@@ -70,6 +71,12 @@
   }
   .for-hope h1 {
     font-size: 1.1rem;
+    
+  }
+  .for-hope{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .title {
     font-weight: bold;

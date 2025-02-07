@@ -2,21 +2,22 @@ import React from "react";
 import "../Payment.css";
 import paystack from "../assets/paystack.png";
 
-
 export default function Payment() {
   const payment = document.getElementsByClassName("payment-section");
   const disp = document.getElementsByClassName("paystack-btn");
   function DiplayError() {
-    alert("Paystack is not available at the moment, kindly transfer direct to the Foundation Account details provided, Thank you!")
+    alert(
+      "Paystack is not available at the moment, kindly transfer direct to the Foundation Account details provided, Thank you!"
+    );
   }
 
   return (
     <>
       <section className="payment-section">
-        <h2>Thank you for your generosity</h2>
-        <p>
+        <h1 className="thankyou">Thank you for your generosity!</h1>
+        <p className="paym">
           You can make donation through any of the payment gateways provided
-          below.{" "}
+          below.
         </p>
         <p>
           You donate through paystack or transfer directly into the foundation
@@ -31,7 +32,7 @@ export default function Payment() {
 
         <div className="account-details">
           <h4>Account Details</h4>
-          <h2 className="account-number">1304616483</h2>
+          <h1 className="account-number">1304616483</h1>
           <p>BANK NAME: PROVIDUS BANK</p>
           <h3>United Women Initiative Against Depression Foundation</h3>
         </div>

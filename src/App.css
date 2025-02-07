@@ -6,10 +6,14 @@
 section {
   scroll-behavior: smooth;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #e8daf7;
   color: black;
+
 }
 
 /* Footer Styling */

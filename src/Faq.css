@@ -41,6 +41,9 @@
   .accordion:focus-visible {
     outline: none !important;
   }
+  .mailbox{
+    font-size: 15px;
+  }
   
   .panel {
     padding: 0px 38px;
