@@ -48,7 +48,7 @@ function ImageGallery() {
     <>
       <motion.section
         className="section3"
-        id='gallery'
+        id="gallery"
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import uwiadlogo from "../assets/uwiadlogo.png";
 import "../Nav.css";
 import { X, Menu } from "lucide-react";
@@ -8,6 +8,8 @@ export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const navRef = useRef(null);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -35,15 +37,26 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Scroll to section when navigating
+  const handleNavigation = (path, hash) => {
+    setIsMenuOpen(false);
+    if (location.pathname === "/" && hash) {
+      // Smooth scroll on the home page
+      const targetElement = document.querySelector(hash);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      navigate(path + (hash || ""));
+    }
+  };
+
   return (
     <header>
-      <div
-        className={`ForNav ${isScrolled ? "shadow-on-scroll" : ""}`}
-        ref={navRef}
-      >
+      <div className={`ForNav ${isScrolled ? "shadow-on-scroll" : ""}`} ref={navRef}>
         <nav>
           {/* My Logo Section */}
-          <Link to="/">
+          <Link to="/" onClick={() => handleNavigation("/")}>
             <img src={uwiadlogo} alt="uwiad-logo" className="uwiadlogo" />
           </Link>
 
@@ -55,43 +68,23 @@ export default function NavBar() {
           {/* Navigation Links */}
           <div className={`nav-links-container ${isMenuOpen ? "show" : ""}`}>
             <div className="for-links-alone">
-              <Link
-                to="/"
-                className="nav-links active"
-                onClick={() => setIsMenuOpen(false)}
-              >
+              <Link to="/" onClick={() => handleNavigation("/", "#home")} className="nav-links">
                 Home
               </Link>
-              <Link
-                to="/about"
-                className="nav-links"
-                onClick={() => setIsMenuOpen(false)}
-              >
+              <Link to="/" onClick={() => handleNavigation("/", "#about")} className="nav-links">
                 About Us
               </Link>
-              <Link
-                to="/gallery"
-                className="nav-links"
-                onClick={() => setIsMenuOpen(false)}
-              >
+              <Link to="/" onClick={() => handleNavigation("/", "#gallery")} className="nav-links">
                 Gallery
               </Link>
-              <Link
-                to="/contact"
-                className="nav-links"
-                onClick={() => setIsMenuOpen(false)}
-              >
+              <Link to="/" onClick={() => handleNavigation("/", "#contact")} className="nav-links">
                 Contact
               </Link>
             </div>
 
             {/* Donate Button */}
             <div className={`navButton ${isMenuOpen ? "show" : ""}`}>
-              <Link
-                to="/payment"
-                className="donate-btn"
-                onClick={() => setIsMenuOpen(false)}
-              >
+              <Link to="/payment" className="donate-btn" onClick={() => setIsMenuOpen(false)}>
                 Donate Now
               </Link>
             </div>
