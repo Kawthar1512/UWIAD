@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import faq from "../assets/faq.png";
-import "../Faq.css"
+import "../Faq.css";
 
 const AccordionItem = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
@@ -86,15 +86,16 @@ const Accordion = () => {
         transition={{ duration: 1, delay: 0.5 }}
       >
         You have other questions? Email us at{" "}
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=uwiadfoundation@gmail.com"  target="_blank">uwiadfoundation@gmail.com </a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=uwiadfoundation@gmail.com"
+          target="_blank"
+        >
+          uwiadfoundation@gmail.com{" "}
+        </a>
       </motion.p>
 
       {accordionData.map((item, index) => (
-        <AccordionItem
-          key={index}
-          title={item.title}
-          content={item.content}
-        />
+        <AccordionItem key={index} title={item.title} content={item.content} />
       ))}
     </section>
   );
