@@ -1,86 +1,94 @@
 .section2 {
-  display: flex;
-  align-items: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Verdana, sans-serif;
+  font-weight: lighter;
+  font-family: sans-serif;
+
   padding: 100px 80px 100px 80px;
-  /* background-color: #e8daf7; */
   background-color: whitesmoke;
   overflow-x: hidden;
+}
 
-  /* border: 1px solid black; */
-}
-.section2-text {
-  /* margin-top: 100px; */
-  margin-left: 300px;
-
- 
-}
-.sec2-text {
-  margin-top: 5px;
-}
-.title {
-  font-weight: bold;
-  font-style: italic;
-  margin-top: -50px;
-}
-.discover {
-  margin-top: 20px;
-  margin-right: 38px;
-  cursor: pointer;
-  /* font-family: 'fira code'; */
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-size: 15px;
-  padding: 15px;
-  border: none;
-  /* width: 160px; */
-  border-radius: 10px;
-  color: white;
-  background-color: #7d33c3;
-  /* height: 50px; */
-}
-.hopee {
-  width: 50px;
-}
-.for-hope {
+.three-aspects {
   display: flex;
-  color: #7d33c3;
- 
-  /* margin-top: -40px; */
+  /* padding: 20px; */
+
+  justify-content: space-between;
+  /* grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+  align-items: stretch; */
 }
+.aspect-img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 13px 13px 0px 0px;
+}
+.women-text {
+  font-size: 27px;
+}
+.card {
+  border: 1px solid #7d33c3;
+  width: 27%;
+  border-radius: 13px;
+  
+  /* height: 400px; */
+  /* padding: 20px; */
+}
+.card-text {
+  padding: 20px;
+  /* background-color: red; */
+  margin-top: -7px;
+}
+
+.mission{
+  background-color: #E6E6FA;
+}
+.mission:hover{
+  background-color: #b4b4ee;
+}
+.vision{
+  background-color: #C8A2C8;
+}
+.vision:hover{
+  background-color: #c580c5;
+}
+.upliftment{
+  background-color: #ca8af5;
+}
+.top-text{
+  text-align: center;
+  padding: 50px;
+}
+
+
+
+
+
 
 @media (max-width: 1000px) {
-  .children {
-    width: 300px;
-    height: 300px;
-  }
   .section2 {
-    display: inline-block;
     width: 100%;
     text-align: center;
     padding: 10px 40px 40px 40px;
   }
   .section2-text {
     margin-left: 0px;
-    /* margin-top: -10px; */
+    margin-top: -10px;
   }
   .about-text {
-    /* text-align: center; */
+    text-align: center;
     font-size: 18px;
   }
-  .for-hope h1 {
-    font-size: 1.1rem;
-    
-  }
-  .for-hope{
-    text-align: center;
-    align-items: center;
+  .three-aspects {
+    display: inline;
     justify-content: center;
+    /* grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+    align-items: stretch; */
   }
-  .title {
-    font-weight: bold;
-    font-style: italic;
-    margin-top: -50px;
+  .card {
+    /* border: 2px solid red; */
+    margin-bottom: 30px;
+
+    width: 100%;
   }
 }

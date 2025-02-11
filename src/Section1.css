@@ -121,6 +121,7 @@
 
   @media (max-width: 1000px) {
     .first-section {
+      /* display: inline-block; */
         display: flex;
         /* background-image: url(./assets/img2.jpg); */
         background-position: center;

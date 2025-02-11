@@ -36,7 +36,7 @@ export default function Section() {
 
           </p>
           <Link to="/payment">
-          <button className="donate-btn-hero">Donate Now</button>
+          <button className="donate-btn-hero">Donate</button>
           </Link>
         </div>
 
