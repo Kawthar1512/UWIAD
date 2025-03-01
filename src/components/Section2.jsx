@@ -27,9 +27,7 @@ export default function Section2() {
               <p  className="card-text">
               <h1>Mission</h1>
 
-                To provide a supportive community where women can openly discuss
-                their mental health challenges, find comfort and resources, and
-                access education to improve mental wellness.
+              To foster a society where every woman feels empowered to seek mental health support without fear of stigma or judgement.
               </p>
             </div>
             <div className="vision card">
@@ -47,9 +45,7 @@ export default function Section2() {
               <p className="card-text">
               <h1 className="women-text">Women Empowerment</h1>
 
-                To provide a supportive community where women can openly discuss
-                their mental health challenges, find comfort and resources, and
-                access education to improve mental wellness.
+              we sponsor women vocational education (and skills acquisition).
               </p>
             </div>
           </div>

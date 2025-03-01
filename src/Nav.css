@@ -9,6 +9,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 6px 80px 6px 80px ;
+    cursor: pointer;
     }
   .ForNav{
     position: relative;
@@ -53,6 +54,7 @@ nav {
     border-radius: 10px;
     color: white;
     background-color: #7d33c3;
+    cursor: pointer;
     
     /* height: 50px; */
   }
@@ -120,7 +122,7 @@ nav {
     right: 10px;
     top: 50px;
    text-align: center;
-   background-color: #e190f6fa;
+   background-color: rgb(255, 255, 255);
     /* background-color: whitesmoke; */
     padding: 20px;
     width: 100%;

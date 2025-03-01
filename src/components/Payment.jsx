@@ -33,7 +33,7 @@ export default function Payment() {
         <div className="account-details">
           <h4>Account Details</h4>
           <h1 className="account-number">1304616483</h1>
-          <p>BANK NAME: PROVIDUS BANK</p>
+          <h3>BANK NAME: PROVIDUS BANK</h3>
           <h3>United Women Initiative Against Depression Foundation</h3>
         </div>
       </section>
