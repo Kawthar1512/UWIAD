@@ -26,14 +26,15 @@
   font-size: 27px;
 }
 .card {
-  border: 1px solid #7d33c3;
   width: 27%;
   border-radius: 13px;
   cursor:default;
-  
-  /* height: 400px; */
-  /* padding: 20px; */
+  box-shadow: 9px 9px 22px  5px grey;
+
+
 }
+
+
 .card-text {
   padding: 20px;
   /* background-color: red; */
@@ -41,21 +42,25 @@
 }
 
 .mission{
-  background-color: #E6E6FA;
+  /* background-color: #E6E6FA; */
   /* color: white; */
+  background-color: off-white;
   /* color: #7d33c3; */
 }
 .mission:hover{
-  background-color: #b4b4ee;
+  background-color: #c580c5;
 }
 .vision{
-  background-color: #C8A2C8;
+  background-color: off-white;
 }
 .vision:hover{
   background-color: #c580c5;
 }
 .upliftment{
-  background-color: #ca8af5;
+  background-color: off-white;
+}
+.upliftment:hover{
+  background-color: #c580c5;
 }
 .top-text{
   text-align: center;
