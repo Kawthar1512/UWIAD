@@ -9,7 +9,7 @@ import ImageGallery from "./components/Gallery.jsx";
 import Accordion from "./components/Faq.jsx";
 import Footer from "./components/Footer.jsx";
 import Payment from "./components/Payment.jsx";
-import Causes from "./components/Causes.jsx";
+import Director from "./components/Directors.jsx";
 
 export default function App() {
   return (
@@ -25,12 +25,16 @@ export default function App() {
               </div>
               <div id="about">
                 <Section2 />
+
                 {/* <Causes /> */}
               </div>
+
               <div id="gallery">
                 <ImageGallery />
               </div>
+            
               <div id="contact">
+                <Director/>
                 <Accordion />
                 <Footer />
               </div>

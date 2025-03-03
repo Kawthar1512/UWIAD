@@ -1,0 +1,19 @@
+.MainContainer {
+  padding: 100px 80px 120px 80px;
+  /* background-color: white; */
+}
+
+.board {
+  text-align: center;
+}
+.directorCard {
+  width: 40%;
+  border: 1px solid gray;
+  height: auto;
+  margin: 20px 0 20px 10px;
+  display: flex;
+}
+.directorCard img {
+  width: 38%;
+  height: inherit;
+}
