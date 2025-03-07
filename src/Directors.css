@@ -7,13 +7,22 @@
   text-align: center;
 }
 .directorCard {
-  width: 40%;
-  border: 1px solid gray;
+  width: 24%;
+  /* border: 1px solid gray; */
   height: auto;
-  margin: 20px 0 20px 10px;
-  display: flex;
+  margin: 20px 50px 20px 10px;
+  text-align: center;
+  box-shadow: 9px 9px 22px  5px rgb(199, 162, 201);
+
+
+  /* display: flex; */
 }
 .directorCard img {
-  width: 38%;
-  height: inherit;
+  width: 100%;
+  height: 300px;
+}
+.container{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
