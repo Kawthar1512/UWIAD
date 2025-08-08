@@ -13,25 +13,24 @@
   margin: 20px 130px 20px 5px;
   text-align: center;
 }
-.directorCard:hover{
-  box-shadow: 9px 9px 22px  5px rgb(199, 162, 201);
-
+.directorCard:hover {
+  box-shadow: 9px 9px 22px 5px rgb(199, 162, 201);
 }
 .directorCard img {
   width: 100%;
   height: 200px;
 }
-.directorCard div{
+.directorCard div {
   /* width: 10%; */
   text-align: center;
 }
-.directorCard p{
+.directorCard p {
   font-size: 12px;
 }
 .container {
   display: flex;
-  justify-content: center; 
-  align-items: center;     
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   text-align: center;
   padding: 0 0 0 120px;
@@ -41,39 +40,39 @@
   margo
 } */
 
- @media (max-width: 1000px) {
-      .container {
-  display: block;
-  /* border: 1px solid black; */
-  /* justify-content: center;  */
-  /* align-items: center;      */
-  margin: 0 auto;
-  /* text-align: center; */
-  /* padding: 0 0 0 10px; */
-  height: 1200px; 
+@media (max-width: 1000px) {
+  .container {
+    display: block;
+    /* border: 1px solid black; */
+    /* justify-content: center;  */
+    /* align-items: center;      */
+    margin: 0 auto;
+    /* text-align: center; */
+    /* padding: 0 0 0 10px; */
+    height: 1200px;
+  }
+  .directorCard img {
+    width: 60%;
+    height: 200px;
+    /* margin-right: 10px; */
+  }
+  .directorCard {
+    width: 100%;
+    /* border: 1px solid gray; */
+    height: auto;
+    margin: 0 auto;
+    margin: 20px 0px 20px -30px;
+    text-align: center;
+  }
+  .MainContainer {
+    padding: 60px 80px 700px 0px;
+    border: 1px solid black;
+    /* background-color: white; */
+  }
+  .board {
+    text-align: center;
+    font-size: 17px;
+    margin-left: 57px;
+    color: red;
+  }
 }
-.directorCard img {
-  width: 60%;
-  height: 200px;
-  /* margin-right: 10px; */
-}
-.directorCard {
-  width: 100%;
-  /* border: 1px solid gray; */
-  height: auto;
-  margin: 0 auto;
-  margin: 20px 0px 20px -30px;
-  text-align: center;
-}
-.MainContainer {
-  padding: 60px 80px 700px 0px;
-  border: 1px solid black;
-  /* background-color: white; */
-}
-.board {
-  text-align: center;
-  font-size: 17px;
-  margin-left: 57px;
-}
-            
-    }
