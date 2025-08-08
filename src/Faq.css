@@ -1,121 +1,111 @@
-.faq-sec{
-    text-align: center;
-    background-color: whitesmoke;
-    padding: 50px 100px 50px 100px;
-    overflow-x: hidden;
-  
-   }
-  .accordion {
-    background-color: white;
-    /* background-color: rgb(144, 144, 144); */
-    /* color: white; */
-    /* color: purple; */
-    color: rgb(79, 55, 55);
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 17px;
-    transition: 0.4s;
-    font-weight: bold;
-    margin-top: 10px;
-    outline: none;  /* Removes focus outline */
-    -webkit-tap-highlight-color: transparent; /* Removes blue on mobile */
-    -webkit-focus-ring-color: transparent; /* For Safari */
-  
-  }
-  
-  
-  
+.faq-sec {
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 50px 100px;
+  overflow-x: hidden;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.accordion {
+  background-color: white;
+
+  color: rgb(79, 55, 55);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+  transition: 0.4s;
+  font-weight: bold;
+  margin-top: 10px;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent; /* For Safari */
+}
+
+.accordion span {
+  float: right;
+  font-weight: bold;
+  font-size: 30px;
+}
+.accordion span:focus {
+  outline: none;
+}
+.accordion:focus-visible {
+  outline: none !important;
+}
+.mailbox {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.panel {
+  padding: 0px 38px;
+  background-color: white;
+
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.faq {
+  background-color: whitesmoke;
+}
+.faq-sec h2 {
+  color: #551a8b;
+}
+.faq-sec a {
+  color: #551a8b;
+  text-decoration: none;
+}
+.faq-sec a:hover {
+  text-decoration: underline;
+}
+.faq-img {
+  width: 10%;
+  /* width: 100px; */
+}
+
+.accordion:hover,
+.accordion:focus,
+.accordion:active {
+  outline: none !important;
+  background-color: #e8daf7 !important; /* Your desired hover color */
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.accordion:focus-visible {
+  outline: none !important;
+}
+
+.accordion::-moz-focus-inner {
+  border: 0; /* Removes Firefox focus border */
+}
+@media (max-width: 1000px) {
+  /* .accordion{
+        width: 0px;
+    } */
   .accordion span {
     float: right;
     font-weight: bold;
-    font-size: 30px;
-    
+    font-size: 25px;
+    /* margin-top: -20px; */
   }
-  .accordion span:focus {
-    outline: none;
+  .faq-img {
+    width: 25%;
+    /* width: 100px; */
   }
-  .accordion:focus-visible {
-    outline: none !important;
+  .faq-sec h2 {
+    color: red;
+    /* text-align: center; */
+    font-size: 1rem;
+    margin-left: -100px;
   }
-  .mailbox{
-    font-size: 15px;
-    font-weight: 400;
+  .faq-sec {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 50px 40px 40px 40px;
   }
-  
-  .panel {
-    padding: 0px 38px;
-    /* margin-top: 50px; */
-    background-color: white;
-    /* border: 1px solid black; */
-    /* max-height: 0; */
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-  
-  .faq{
-     background-color: whitesmoke;
-  
-  }
-  .faq-sec h2{
-      color: #551a8b;
-  }
-  .faq-sec a {
-    color: #551a8b;
-    text-decoration: none;
-  }
-  .faq-sec a:hover{
-    text-decoration: underline;
-  }
-  .faq-img{
-      width: 10%;
-      /* width: 100px; */
-  }
-  
-  .accordion:hover, 
-  .accordion:focus, 
-  .accordion:active {
-    outline: none !important;
-    background-color: #e8daf7 !important; /* Your desired hover color */
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-  }
-  
-  .accordion:focus-visible {
-    outline: none !important;
-  }
-  
-  .accordion::-moz-focus-inner {
-    border: 0; /* Removes Firefox focus border */
-  }
-  @media (max-width:1000px) {
-    /* .accordion{
-        width: 0px;
-    } */
-    .accordion span {
-        float: right;
-        font-weight: bold;
-        font-size: 25px;
-        /* margin-top: -20px; */
-        
-      }
-      .faq-img{
-        width: 25%;
-        /* width: 100px; */
-    }
-    .faq-sec h2{
-        color: red;
-        /* text-align: center; */
-        font-size: 1rem;
-        margin-left: -100px;
-    }
-    .faq-sec{
-        text-align: center;
-        background-color: whitesmoke;
-        padding: 50px 40px 40px 40px;
-      
-       }
-  }
+}

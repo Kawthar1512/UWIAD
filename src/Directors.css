@@ -1,6 +1,5 @@
 .MainContainer {
   padding: 100px 80px 120px 80px;
-  /* background-color: white; */
 }
 
 .board {
@@ -8,7 +7,6 @@
 }
 .directorCard {
   width: 16%;
-  /* border: 1px solid gray; */
   height: auto;
   margin: 20px 130px 20px 5px;
   text-align: center;
@@ -21,7 +19,6 @@
   height: 200px;
 }
 .directorCard div {
-  /* width: 10%; */
   text-align: center;
 }
 .directorCard p {
@@ -34,21 +31,16 @@
   margin: 0 auto;
   text-align: center;
   padding: 0 0 0 120px;
-  height: 400px; /* height is required for vertical centering */
+  height: 400px; 
 }
-/* .card3{
-  margo
-} */
+
 
 @media (max-width: 1000px) {
   .container {
     display: block;
-    /* border: 1px solid black; */
-    /* justify-content: center;  */
-    /* align-items: center;      */
+    
     margin: 0 auto;
-    /* text-align: center; */
-    /* padding: 0 0 0 10px; */
+
     height: 1200px;
   }
   .directorCard img {
