@@ -84,18 +84,14 @@
   border: 0; /* Removes Firefox focus border */
 }
 @media (max-width: 1000px) {
-  /* .accordion{
-        width: 0px;
-    } */
+
   .accordion span {
     float: right;
     font-weight: bold;
     font-size: 25px;
-    /* margin-top: -20px; */
   }
   .faq-img {
     width: 25%;
-    /* width: 100px; */
   }
   .faq-sec h2 {
     color: red;
