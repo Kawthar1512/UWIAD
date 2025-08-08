@@ -55,7 +55,7 @@ function ImageGallery() {
         viewport={{ once: false, amount: 0.3 }} // Adjust 'amount' as needed
       >
         <h5>Gallery</h5>
-        <h2>Our Photo Gallery</h2>
+        <h2 className='my-h1'>Our Photo Gallery</h2>
         <motion.div className="gallery">
           {images.map((image, index) => (
             <motion.img

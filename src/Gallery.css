@@ -9,6 +9,7 @@
     
     .gallery {
       display: grid;
+      /* margin-bottom: 20px; */
       /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
       grid-gap: 10px;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
@@ -23,7 +24,9 @@
       border-radius: 30px ;
       object-fit: cover; 
     }
-    
+    .my-h1{
+      margin-bottom: 30px;
+    }
     .slideshow {
       top: 0px;
       left: 0;
