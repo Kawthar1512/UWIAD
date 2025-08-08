@@ -44,24 +44,36 @@
  @media (max-width: 1000px) {
       .container {
   display: block;
-  justify-content: center; 
-  align-items: center;     
+  /* border: 1px solid black; */
+  /* justify-content: center;  */
+  /* align-items: center;      */
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
   /* padding: 0 0 0 10px; */
-  height: 400px; 
+  height: 1200px; 
 }
 .directorCard img {
-  width: 100%;
+  width: 60%;
   height: 200px;
+  /* margin-right: 10px; */
 }
 .directorCard {
   width: 100%;
   /* border: 1px solid gray; */
   height: auto;
   margin: 0 auto;
-  /* margin: 20px 10px 20px 5px; */
+  margin: 20px 0px 20px -30px;
   text-align: center;
+}
+.MainContainer {
+  padding: 60px 80px 700px 0px;
+  border: 1px solid black;
+  /* background-color: white; */
+}
+.board {
+  text-align: center;
+  font-size: 17px;
+  margin-left: 57px;
 }
             
     }
