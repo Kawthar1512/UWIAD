@@ -84,10 +84,7 @@
   border: 0; /* Removes Firefox focus border */
 }
 
-.dName p{
-    width: 155px;
 
-}
 @media (max-width: 1000px) {
 
   .accordion span {

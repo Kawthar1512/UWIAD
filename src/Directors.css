@@ -33,7 +33,11 @@
   padding: 0 0 0 120px;
   height: 400px; 
 }
+.dName p{
+    width: 155px;
+    
 
+}
 
 @media (max-width: 1000px) {
   .container {
@@ -55,12 +59,15 @@
   }
   .MainContainer {
     padding: 60px 80px 400px 0px;
-    border: 1px solid black;
+    
   }
   .board {
     text-align: center;
     font-size: 17px;
     margin-left: 57px;
 
+  }
+  .dName p{
+    margin-left: 33px;
   }
 }
