@@ -83,9 +83,10 @@
 .accordion::-moz-focus-inner {
   border: 0; /* Removes Firefox focus border */
 }
-.dName{
-  border: 1px solid black;
-  width: 200px;
+
+.dName p{
+    width: 155px;
+
 }
 @media (max-width: 1000px) {
 
