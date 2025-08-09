@@ -85,6 +85,7 @@
 }
 .dName{
   border: 1px solid black;
+  width: 200px;
 }
 @media (max-width: 1000px) {
 
