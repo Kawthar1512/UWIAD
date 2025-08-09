@@ -16,7 +16,7 @@ export default function Director() {
           {/* card one  */}
           <div className="directorCard">
             <img src={image1} alt="" />
-            <div>
+            <div className="dName">
               <h3>Ipaye Damilola</h3>
               <p>Community outreach coordinator for Lagos State</p>
             </div>
@@ -26,7 +26,7 @@ export default function Director() {
           
            <div className="directorCard">
             <img src={image2} alt="" />
-            <div>
+            <div className="dName">
               <h3>Ipaye Damilola</h3>
               <p>Community outreach coordinator for Lagos State</p>
             </div>
@@ -35,14 +35,14 @@ export default function Director() {
           {/* card three  */}
           <div className="directorCard card3">
             <img src={image3} alt="directorImage" />
-            <div>
+            <div className="dName">
               <h3>Ipaye Damilola</h3>
               <p>Community outreach coordinator for Lagos State</p>
             </div>
           </div>
           <div className="directorCard">
             <img src={image2} alt="" />
-            <div>
+            <div  className="dName">
               <h3>Ipaye Damilola</h3>
               <p>Community outreach coordinator for Lagos State</p>
             </div>
