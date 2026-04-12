@@ -35,11 +35,12 @@
 }
 .dName p {
   width: 155px;
-
-  .dName {
-    width: 800px;
-    background-color: red;
-  }
+  font-size: 16px;
+border: 1px solid  red;
+text-align: center;
+justify-content: center;
+margin:auto;
+ 
 }
 .card4 {
   width: 100%;
@@ -73,6 +74,10 @@
     margin-left: 57px;
   }
   .dName p {
-    margin-left: 19px;
-  }
+
+  font-size: 14px;
+
+ 
+}
+
 }

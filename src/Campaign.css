@@ -1,6 +1,6 @@
 .help-section {
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
 }
 
 /* IMAGE SECTION */
@@ -24,7 +24,7 @@
 .woman {
   width: 100%;
   max-width: 650px;
-  margin: 30px auto;
+  margin: 10px auto;
   padding: 20px;
   text-align: justify;
   line-height: 1.6;
