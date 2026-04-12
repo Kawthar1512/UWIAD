@@ -31,16 +31,22 @@ export default function Section() {
           <p className="urgent">Urgent Support needed!</p>
           <p className="giving-back">
             We are currently fundraising for a woman and her little child. The
-            woman has stage 4 breast cancer and recently underwent a mastectomy.
-            Her child also has a large tumor on her leg. A biopsy has been done,
+            woman has stage 4 breast cancer and recently underwent a mastectomy. Her child also has a large tumor on her leg.
+            {/* A biopsy has been done,
             and she urgently needs surgery. Every contribution, no matter how
-            small, can make a real difference in their lives. Click here to read
-            more.
+            small, can make a real difference in their lives. */}
+           
+            {/* <Link to="/campaign" >
+              Click here to read more
+            </Link> */}
             {/* Giving back is a noble act. Your selfless contribution, however
             small, has a profound impact on the lives of others. Let's join
             hands and create a better world.{" "} */}
             {/* <img src={world} alt="" className="worldImg" /> */}
           </p>
+           <Link to="/campaign" className="read-more">
+              Click here to read more
+            </Link>
           <Link to="/payment">
             <button className="donate-btn-hero">Donate</button>
           </Link>

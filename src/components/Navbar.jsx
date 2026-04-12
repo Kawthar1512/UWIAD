@@ -38,18 +38,20 @@ export default function NavBar() {
   }, []);
 
   // Scroll to section when navigating
-  const handleNavigation = (path, hash) => {
-    setIsMenuOpen(false);
-    if (location.pathname === "/" && hash) {
-      // Smooth scroll on the home page
-      const targetElement = document.querySelector(hash);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth" });
-      }
-    } else {
-      navigate(path + (hash || ""));
+const handleNavigation = (path, hash) => {
+  setIsMenuOpen(false);
+
+  if (path === "/" && hash) {
+    const targetElement = document.querySelector(hash);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
     }
-  };
+    navigate("/");
+    return;
+  }
+
+  navigate(path);
+};
 
   return (
     <header>
@@ -68,9 +70,7 @@ export default function NavBar() {
           {/* Navigation Links */}
           <div className={`nav-links-container ${isMenuOpen ? "show" : ""}`}>
             <div className="for-links-alone">
-              <Link to="/" onClick={() => handleNavigation("/", "#home")} className="nav-links">
-                Home
-              </Link>
+             <Link to="/" className="nav-links">Home</Link>
               <Link to="/" onClick={() => handleNavigation("/", "#about")} className="nav-links">
                 About Us
               </Link>

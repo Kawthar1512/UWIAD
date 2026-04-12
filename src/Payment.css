@@ -1,10 +1,10 @@
-.payment-section{
-    padding:150px 50px 150px 50px ;
-    /* background-color: whitesmoke; */
-    /* height: 500px; */
+.payment-section {
+  padding: 115px 50px 150px 50px;
+  /* background-color: whitesmoke; */
+  /* height: 500px; */
 }
 
-button{
+/* .paystack-btn{
  
     background:#001A33;
     color: white;
@@ -16,27 +16,135 @@ button{
     margin-bottom: 30px;
     font-weight: bold;
 
+} */
+.paystack-btn {
+  background: #001a33;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  max-width: 300px;
+
+  margin-left: auto;
+  margin-right: auto; /* ✅ THIS FIXES CENTERING */
 }
-.paystack-img{
-    width: 20px;
+.paystack-img {
+  width: 20px;
+  height: auto;
 }
-footer{
-   margin-top: 30px;
+footer {
+  margin-top: 30px;
 }
-h1{
-    /* color:red; */
-    font-size: 30px;
+h1 {
+  /* color:red; */
+  font-size: 30px;
 }
-.paym{
-    font-weight: 50;
+.paym {
+  font-weight: 50;
 }
-.separator-text{
-    font-size: 30px;
+.separator-text {
+  font-size: 25px;
+  margin-top: 15px;
 }
-.account-number{
-    color: red;
-    font-size: 50px;
+.account-number {
+  color: red;
+  font-size: 40px;
 }
-.account-number p,h3{
-    font-weight: bold;
+.account-number p,
+h3 {
+  font-weight: bold;
+}
+.bb {
+  margin-top: 20px;
+}
+.after {
+  font-weight: lighter;
+  font-style: normal;
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.donated {
+  text-decoration: none;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.popup {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 320px;
+  width: 90%;
+  transform: scale(0.8);
+  animation: popIn 0.3s ease forwards;
+}
+
+.popup h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popup p {
+  margin: 5px 0;
+}
+
+.small-text {
+  font-size: 14px;
+  color: gray;
+}
+
+/* animations */
+@keyframes popIn {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.donated {
+  background: #045c22;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .paystack-btn {
+    width: 100%;
+    max-width: 100%;
+  }
 }

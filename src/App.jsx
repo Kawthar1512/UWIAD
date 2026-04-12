@@ -10,6 +10,7 @@ import Accordion from "./components/Faq.jsx";
 import Footer from "./components/Footer.jsx";
 import Payment from "./components/Payment.jsx";
 import Director from "./components/Directors.jsx";
+import Campaign from "./components/Campaign.jsx";
 
 export default function App() {
   return (
@@ -32,9 +33,9 @@ export default function App() {
               <div id="gallery">
                 <ImageGallery />
               </div>
-            
+
               <div id="contact">
-                <Director/>
+                <Director />
                 <Accordion />
                 <Footer />
               </div>
@@ -42,6 +43,16 @@ export default function App() {
           }
         />
         <Route path="/payment" element={<Payment />} />
+        {/* <Route
+  path="/campaign"
+  element={
+    <div style={{ padding: "50px", margin: "500px",fontSize: "30px", color: "red", background: "white" }}>
+      CAMPAIGN WORKS
+    </div>
+  }
+/> */}
+        {/* <Route path="/campaign" element={<div style={{color:"white"}}>WORKS</div>} /> */}
+        <Route path="/campaign" element={<Campaign />} />
       </Routes>
     </Router>
   );
