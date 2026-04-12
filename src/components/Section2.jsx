@@ -15,7 +15,7 @@ export default function Section2() {
         <div className="section2-text">
           <div className="top-text">
           <h2 className="about-text">About Us</h2>
-           <p>We are a  dedicated non-profit commited to support women and families in need. We provide essential resources, including food, clothing, shelter and educational opportunites, 
+           <p>We are a  dedicated non-profit organization commited to support women and families in need. We provide essential resources, including food, clothing, shelter and educational opportunites, 
             to empower those facing challenges. 
             our mission is to empower women & create safe spaces, create awareness on mental health and support women battling depression & anxiety.</p>
             </div>

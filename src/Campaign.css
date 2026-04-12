@@ -1,33 +1,72 @@
 .help-section {
   text-align: center;
-  padding: 100px;
+  padding: 80px 20px;
 }
 
+/* IMAGE SECTION */
 .img-divv {
   display: flex;
   justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
   width: 100%;
 }
 
-img {
+.img-divv img {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   height: auto;
   padding: 10px;
+  border-radius: 10px;
 }
 
+/* STORY SECTION */
 .woman {
   width: 100%;
-  max-width: 600px;
-  margin: 20px auto;
+  max-width: 650px;
+  margin: 30px auto;
   padding: 20px;
-  /* border: 1px solid black; */
   text-align: justify;
+  line-height: 1.6;
 }
+
+/* TITLE */
+.jelo {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* PROGRESS BAR */
+.progress-container {
+  margin-top: 30px;
+}
+
+.progress-container p {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 500px;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #045c22;
+  transition: width 0.6s ease;
+}
+
+/* 📱 MOBILE */
 @media (max-width: 768px) {
 
   .help-section {
-    padding: 100px 20px;
+    padding: 60px 15px;
   }
 
   .img-divv {
@@ -35,16 +74,17 @@ img {
     align-items: center;
   }
 
-  img {
+  .img-divv img {
     max-width: 100%;
-    padding: 10px 0;
+    padding: 8px 0;
   }
 
   .woman {
     padding: 15px;
     max-width: 100%;
   }
-  .jelo{
-    font-size: 20px;
+
+  .jelo {
+    font-size: 22px;
   }
 }
