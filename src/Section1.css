@@ -1,3 +1,12 @@
+.urgent{
+  color: red;
+  margin-top: 20px;
+  font-weight: 100;
+  font-style: italic;
+  margin-right: 10px;
+  margin-bottom: -20px;
+  
+}
 .first-section {
     display: flex;
     padding: 100px 80px 40px 80px;
@@ -20,11 +29,13 @@
     line-height: 1;
   }
   .giving-back {
-    font-size: 18px;
-    margin: 20px 0  20px  5px;
-    font-weight: 500;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    margin: 20px 0  20px  0px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     color: black;
+    text-align: justify;
   }
   .donate-btn-hero {
     
