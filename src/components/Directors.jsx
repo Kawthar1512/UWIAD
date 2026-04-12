@@ -14,14 +14,13 @@ export default function Director() {
         {/* container  for the director card */}
 
         <main className="container">
-
-          <div className="directorCard card3">
+          {/* <div className="directorCard card3">
             <img src={image3} alt="directorImage" />
             <div className="dName">
               <h4>Aminat Asude</h4>
               <p>Board of Director</p>
             </div>
-          </div>
+          </div> */}
           {/* card one  */}
           <div className="directorCard">
             <img src={image2} alt="" />
@@ -30,15 +29,13 @@ export default function Director() {
               <p>Assistant Director</p>
             </div>
           </div>
-  <div className="directorCard card4">
+          <div className="directorCard card4">
             <img src={image4} alt="" />
             <div className="dName">
               <h5>Adebimpe-Oyewole Robiat</h5>
               <p>Programme Coordinator</p>
             </div>
           </div>
-
-
 
           <div className="directorCard">
             <img src={image1} alt="" />
@@ -50,11 +47,7 @@ export default function Director() {
 
           {/* card two  */}
 
-          
-
           {/* card three  */}
-          
-        
         </main>
       </section>
     </>
