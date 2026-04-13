@@ -3,12 +3,14 @@ import "../Payment.css";
 import { PaystackButton } from "react-paystack";
 import confetti from "canvas-confetti";
 import paystack from "../assets/paystack.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Payment() {
   const [showPopup, setShowPopup] = useState(false);
   const [amount, setAmount] = useState("");
   const [error, setError] = useState("");
   const isValid = Number(amount) >= 1000;
+  const navigate = useNavigate();
 
   function handleDonateClick() {
     setShowPopup(true);
@@ -47,22 +49,21 @@ export default function Payment() {
   // };
 
   const handleSuccess = (reference) => {
-    console.log("Payment successful:", reference);
+  console.log("Payment successful:", reference);
 
-    // trigger your popup + confetti
-    setShowPopup(true);
+  setShowPopup(true);
 
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 },
-    });
+  confetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { y: 0.6 },
+  });
 
-    setTimeout(() => {
-      setShowPopup(false);
-    }, 3000);
-  };
-
+  setTimeout(() => {
+    setShowPopup(false);
+    navigate("/"); // 👈 redirect to home page
+  }, 2000);
+};
   const handleClose = () => {
     console.log("Payment closed");
   };
