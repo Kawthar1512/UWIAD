@@ -5,11 +5,10 @@ import confetti from "canvas-confetti";
 import paystack from "../assets/paystack.png";
 
 export default function Payment() {
-  
   const [showPopup, setShowPopup] = useState(false);
   const [amount, setAmount] = useState("");
   const [error, setError] = useState("");
-const isValid = Number(amount) > 0;
+  const isValid = Number(amount) > 0;
 
   function handleDonateClick() {
     setShowPopup(true);
@@ -32,21 +31,20 @@ const isValid = Number(amount) > 0;
       "Paystack is not available at the moment, kindly transfer direct to the Foundation Account details provided, Thank you!",
     );
   }
-const config = {
-  reference: new Date().getTime().toString(),
-  email: "customer@email.com",
-  amount: Number(amount || 0) * 100,
-  publicKey: "pk_test_9fd498a18de051f30f5e7a878d2449346751d969",
-};
-// const handlePayClick = () => {
-//   if (!amount || Number(amount) <= 0) {
-//     setError("Please enter an amount to continue");
-//     return;
-//   }
+  const config = {
+    reference: new Date().getTime().toString(),
+    email: "customer@email.com",
+    amount: Number(amount || 0) * 100,
+    publicKey: "pk_test_9fd498a18de051f30f5e7a878d2449346751d969",
+  };
+  // const handlePayClick = () => {
+  //   if (!amount || Number(amount) <= 0) {
+  //     setError("Please enter an amount to continue");
+  //     return;
+  //   }
 
-//   setError(""); // clear error if valid
-// };
-
+  //   setError(""); // clear error if valid
+  // };
 
   const handleSuccess = (reference) => {
     console.log("Payment successful:", reference);
@@ -82,26 +80,24 @@ const config = {
         </p>
 
         <div className="donation-form">
-<input
-  type="number"
-  placeholder="Enter amount (₦)"
-  value={amount}
-  onChange={(e) => {
-    const value = e.target.value;
-    setAmount(value);
+          <input
+            type="number"
+            placeholder="Enter amount (₦)"
+            value={amount}
+            onChange={(e) => {
+              const value = e.target.value;
+              setAmount(value);
 
-    if (Number(value) <= 0) {
-      setError("Please enter an amount greater than 0");
-    } else {
-      setError("");
-    }
-  }}
-/>
+              if (Number(value) <= 0) {
+                setError("Please enter an amount greater than 0");
+              } else {
+                setError("");
+              }
+            }}
+          />
+        </div>
 
-
-</div>
-
-   {/* <PaystackButton
+        {/* <PaystackButton
   {...config}
   className="paystack-btn"
   onClick={handlePayClick}
@@ -111,24 +107,28 @@ const config = {
   <img src={paystack} alt="" className="paystack-img" />
   Pay with Paystack
 </PaystackButton> */}
-{error && <p className="hint">{error}</p>}
-<div
-  onClick={() => {
-    if (!amount || Number(amount) <= 0) {
-      setError("Please enter an amount to continue");
-    } else {
-      setError("");
-    }
-  }}
->
-  <PaystackButton
-    {...config}
-    className="paystack-btn"
-    onSuccess={handleSuccess}
-    onClose={handleClose}
-  />
-</div>
-   
+        {error && <p className="hint">{error}</p>}
+        <div
+          onClick={() => {
+            if (!amount || Number(amount) <= 0) {
+              setError("Please enter an amount to continue");
+            } else {
+              setError("");
+            }
+          }}
+        >
+          <PaystackButton
+            {...config}
+            className="paystack-btn"
+            onSuccess={handleSuccess}
+            onClose={handleClose}
+          >
+            {" "}
+            <img src={paystack} alt="" className="paystack-img" /> Pay with
+            Paystack
+          </PaystackButton>
+        </div>
+
         <p>Transfer directly to the Foundation Bank Account:</p>
 
         <div className="account-details">
