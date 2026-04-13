@@ -108,7 +108,7 @@ export default function Payment() {
   Pay with Paystack
 </PaystackButton> */}
         {error && <p className="hint">{error}</p>}
-        <div
+        <div className="showw"
           onClick={() => {
             if (!amount || Number(amount) <= 0) {
               setError("Please enter an amount to continue");
