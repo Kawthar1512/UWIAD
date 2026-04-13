@@ -112,14 +112,22 @@ const config = {
   Pay with Paystack
 </PaystackButton> */}
 {error && <p className="hint">{error}</p>}
-<PaystackButton
-  {...config}
-  className="paystack-btn"
-  disabled={!isValid}
-  onSuccess={handleSuccess}
-  onClose={handleClose}
-/>
-
+<div
+  onClick={() => {
+    if (!amount || Number(amount) <= 0) {
+      setError("Please enter an amount to continue");
+    } else {
+      setError("");
+    }
+  }}
+>
+  <PaystackButton
+    {...config}
+    className="paystack-btn"
+    onSuccess={handleSuccess}
+    onClose={handleClose}
+  />
+</div>
    
         <p>Transfer directly to the Foundation Bank Account:</p>
 
