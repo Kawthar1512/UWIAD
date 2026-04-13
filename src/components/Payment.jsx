@@ -8,7 +8,7 @@ export default function Payment() {
   const [showPopup, setShowPopup] = useState(false);
   const [amount, setAmount] = useState("");
   const [error, setError] = useState("");
-  const isValid = Number(amount) > 0;
+  const isValid = Number(amount) >= 1000;
 
   function handleDonateClick() {
     setShowPopup(true);
@@ -82,13 +82,13 @@ export default function Payment() {
         <div className="donation-form">
           <input
             type="number"
-            placeholder="Enter amount (₦)"
+            placeholder="Enter amount (₦) || Minimum donation is ₦1000"
             value={amount}
             onChange={(e) => {
               const value = e.target.value;
               setAmount(value);
 
-              if (Number(value) <= 0) {
+              if (Number(value) < 1000) {
                 setError("Please enter an amount greater than 0");
               } else {
                 setError("");
@@ -108,7 +108,27 @@ export default function Payment() {
   Pay with Paystack
 </PaystackButton> */}
         {error && <p className="hint">{error}</p>}
-        <div className="showw"
+        {isValid ? (
+  <PaystackButton
+    {...config}
+    className="paystack-btn"
+    onSuccess={handleSuccess}
+    onClose={handleClose}
+  >
+    <img src={paystack} alt="" className="paystack-img" />
+    Pay with Paystack
+  </PaystackButton>
+) : (
+  <button
+    className="paystack-btn disabled"
+    onClick={() => setError("Minimum donation is ₦1000")}
+  >
+    <img src={paystack} alt="" className="paystack-img" />
+    Pay with Paystack
+  </button>
+)}
+        {/* <div
+          className="showw"
           onClick={() => {
             if (!amount || Number(amount) <= 0) {
               setError("Please enter an amount to continue");
@@ -127,7 +147,7 @@ export default function Payment() {
             <img src={paystack} alt="" className="paystack-img" /> Pay with
             Paystack
           </PaystackButton>
-        </div>
+        </div> */}
 
         <p>Transfer directly to the Foundation Bank Account:</p>
 

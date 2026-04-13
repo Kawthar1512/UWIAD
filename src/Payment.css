@@ -196,7 +196,7 @@ h3 {
   font-size: 14px;
 }
 .donation-form input {
-  width: 50%;
+  width: 40%;
   padding: 14px 16px;
   font-size: 16px; /* VERY IMPORTANT for mobile */
   color: #000; /* fixes invisible text */
@@ -206,6 +206,11 @@ h3 {
   outline: none;
   -webkit-appearance: none;
   appearance: none;
+}
+.paystack-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #ccc;
 }
 @media (max-width: 768px) {
   .paystack-btn {
