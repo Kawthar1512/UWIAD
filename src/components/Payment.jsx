@@ -82,7 +82,7 @@ export default function Payment() {
         <div className="donation-form">
           <input
             type="number"
-            placeholder="Enter amount (₦) || Minimum donation is ₦1000"
+            placeholder="Enter amount(₦),Minimum donation is ₦1000"
             value={amount}
             onChange={(e) => {
               const value = e.target.value;
