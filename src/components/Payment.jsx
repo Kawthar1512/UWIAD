@@ -35,7 +35,7 @@ export default function Payment() {
     reference: new Date().getTime().toString(),
     email: "customer@email.com",
     amount: Number(amount || 0) * 100,
-    publicKey: "pk_test_9fd498a18de051f30f5e7a878d2449346751d969",
+    publicKey: "pk_live_729ed2d1e87b65049cf0cd12a95e94b2f5ea11f3",
   };
   // const handlePayClick = () => {
   //   if (!amount || Number(amount) <= 0) {
