@@ -192,6 +192,18 @@ h3 {
   color: #aaa;
   font-size: 14px;
 }
+.donation-form input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px; /* VERY IMPORTANT for mobile */
+  color: #000; /* fixes invisible text */
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
 @media (max-width: 768px) {
   .paystack-btn {
     width: 100%;
