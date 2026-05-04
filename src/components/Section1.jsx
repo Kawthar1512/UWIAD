@@ -70,7 +70,7 @@ export default function Section() {
             <p>
               Join the foundation and be part of making a real difference in
               people’s lives.
-              <p> <a href="https://docs.google.com/forms/d/e/1FAIpQLScbQ8f7IlVv8_8HKCvTADh0ktaacTQ4mi_pr5Xpq_JLQ15xwA/viewform">
+              <p className="linktomail"> <a href="https://docs.google.com/forms/d/e/1FAIpQLScbQ8f7IlVv8_8HKCvTADh0ktaacTQ4mi_pr5Xpq_JLQ15xwA/viewform">
               Click here to become a VOLUNTEER</a></p>
             </p>
           </div>
