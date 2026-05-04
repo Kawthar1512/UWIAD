@@ -16,11 +16,16 @@ export default function Footer() {
             </div>
             <div className="for-text">
               <div>UWIAD</div>
-              <p  className="united-text"> United Women Iniative Against Depression </p>
+              <p className="united-text">
+                {" "}
+                United Women Iniative Against Depression{" "}
+              </p>
             </div>
           </div>
           <div className="foot-links">
-            <a href="" className="home-link">Home</a>
+            <a href="" className="home-link">
+              Home
+            </a>
             <a href="">About</a>
             <a href="">Gallery</a>
             <a href="">Contact</a>
@@ -53,6 +58,8 @@ export default function Footer() {
           </div>
           <div className="copy">
             <p>&copy; Copyright 2025 Uwiad Foundation </p>
+            <p>Designed & developed by Kawthar </p>
+            <a href="mailto:kawtharbolaji402@gmail.com">Send me an email</a>
           </div>
         </div>
       </footer>
